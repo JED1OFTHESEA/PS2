@@ -65,11 +65,11 @@ public class MyInteger{
 		else 
 			return true;
 	}
-	public static boolean isPrime(MyInteger x){
-	    if (x.getValue()%2==0) 
+	public static boolean isPrime(MyInteger y){
+	    if (y.getValue()%2==0) 
 	    	return false;
-	    for(int i=3;i*i<=x.getValue();i+=2) {
-	        if(x.getValue()%i==0)
+	    for(int i=3;i*i<=y.getValue();i+=2) {
+	        if(y.getValue()%i==0)
 	            return false;
 	    }
 	    return true;
