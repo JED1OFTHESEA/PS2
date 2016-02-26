@@ -1,0 +1,77 @@
+package base;
+
+public class MyInteger{
+	private int iValue;
+	int i;
+	
+	public MyInteger(int iValue) {
+	
+	}
+	public int getValue(){
+		return iValue;
+	
+	}
+	public boolean isEven(){
+		if (iValue%2==0)
+			return true;
+		else 
+			return false;
+	}
+	public boolean isOdd(){
+		if (iValue%2==0)
+			return false;
+		else 
+			return true;
+	}
+	public boolean isPrime(){
+	    if (iValue%2==0) 
+	    	return false;
+	    for(int i=3;i*i<=iValue;i+=2) {
+	        if(iValue%i==0)
+	            return false;
+	    }
+	    return true;
+	}
+	public static boolean isEven(int x){
+		if (x==0)
+			return true;
+		else 
+			return false;
+	}
+	public static boolean isOdd(int x){
+		if (x%2==0)
+			return false;
+		else 
+			return true;
+	}
+	public static boolean isPrime(int x){
+	    if (x%2==0) 
+	    	return false;
+	    for(int i=3;i*i<=x;i+=2) {
+	        if(x%i==0)
+	            return false;
+	    }
+	    return true;
+	}
+	public static boolean isEven(MyInteger x){
+		if (x.getValue()==0)
+			return true;
+		else 
+			return false;
+	}
+	public static boolean isOdd(MyInteger x){
+		if (x.getValue()%2==0)
+			return false;
+		else 
+			return true;
+	}
+	public static boolean isPrime(MyInteger x){
+	    if (x.getValue()%2==0) 
+	    	return false;
+	    for(int i=3;i*i<=x.getValue();i+=2) {
+	        if(x.getValue()%i==0)
+	            return false;
+	    }
+	    return true;
+	}
+}
