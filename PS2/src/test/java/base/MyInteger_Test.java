@@ -27,8 +27,28 @@ public class MyInteger_Test {
 	}
 
 	@Test
-	public void test() {
-		assertTrue(1==1);
+	public void testIsEven() {
+		int iIntegerTestValue = 2;
+		MyInteger instance = new MyInteger(iIntegerTestValue);
+		boolean bExpectedresult = true;
+		boolean bActualResult = instance.isEven();
+		assertEquals("testIsEven() failed",bExpectedresult,bActualResult);
+	
 	}
-
+	public void testIsOdd() {
+		int iIntegerTestValue = 3;
+		MyInteger instance = new MyInteger(iIntegerTestValue);
+		boolean bExpectedresult = true;
+		boolean bActualResult = instance.isEven();
+		assertEquals("testIsEven() failed",bExpectedresult,bActualResult);
+	
+	}
+	public void testIsPrime() {
+		int iIntegerTestValue = 13;
+		MyInteger instance = new MyInteger(iIntegerTestValue);
+		boolean bExpectedresult = true;
+		boolean bActualResult = instance.isEven();
+		assertEquals("testIsEven() failed",bExpectedresult,bActualResult);
+		
+	}
 }
