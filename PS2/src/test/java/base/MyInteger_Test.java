@@ -28,7 +28,7 @@ public class MyInteger_Test {
 
 	@Test
 	public void testIsEven() {
-		int iIntegerTestValue = 2;
+		int iIntegerTestValue = 3;
 		MyInteger instance = new MyInteger(iIntegerTestValue);
 		boolean bExpectedresult = true;
 		boolean bActualResult = instance.isEven();
